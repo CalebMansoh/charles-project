@@ -1,0 +1,147 @@
+body{
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+
+.sub-container{
+  width: 8%;
+}
+
+#text{
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 70%;
+  background-color: rgb(246, 241, 241);
+  border: 1px solid black;
+}
+
+.sub-section{
+  width: 8%;
+  height: 97vh;
+  background-color: rgb(200, 198, 198);
+}
+
+.section{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: auto;
+  margin-left: 150px;
+  height: 80vh;
+  width: 84%;
+  background-color: rgb(212, 207, 207);
+}
+
+.section, .contact{
+  margin-right: -50px;
+}
+
+.contact{
+  text-align: center;
+  background-color: purple;
+  height: 70vh;
+  position: absolute;
+  margin-left: -100px;
+  color: white;
+  width: 17%;
+}
+
+.contact p{
+  padding-top: 10px;
+}
+
+.forms{
+  width: 80%;
+
+}
+
+fieldset{
+  width: 45%;
+  text-align: left;
+  margin-left: 150px;
+  background-color: rgb(246, 241, 241);
+  border: 1px solid;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.fieldset-button{
+  margin-top: 80px;
+  text-align: center;
+  border: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  background-color: purple;
+  color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px 25px;
+}
+
+a:hover{
+  opacity: 0.7;
+}
+
+textarea{
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: rgb(246, 241, 241);
+}
+
+.container{
+  text-align: center;
+}
+
+.contact,
+.forms{
+  margin-top: 40px;
+}
+
+/* responsive styles */
+
+
+@media only screen and (max-width: 768px){
+  .section{
+    background-color: rgb(200, 198, 198);
+    width: 152%;
+    display: grid;
+    height: 100vh;
+    margin-left: -25px;
+    text-align: center;
+    margin-right: 1px;
+    grid-template-columns: auto;
+    padding-right: 30px;
+  }
+
+  .contact{
+    text-align: center;
+    background-color: purple;
+    color: white;
+    position: relative;
+    left: 0;
+    height: 10vh;
+    width: 118%;
+    top: 0;
+    margin-top: -30px;
+  }
+
+  fieldset{
+    width: 80%;
+    text-align: left;
+    background-color: rgb(246, 241, 241);
+    left: 0;
+  }
+
+  .sub-container, .sub-section{
+    display: none;
+  }
+}
